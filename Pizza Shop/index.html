@@ -13,7 +13,7 @@
 <header>
   <!-- this div is for logo -->
   <div>
-    <a href="index.html"><img src="./img/pizza_shop_banner.png"></a>
+    <a href="index.html"><img src="./img/pizza_shop_banner.png" alt="pizza shop banner"></a>
   </div>
   <!-- this nav is for site navigation -->
   <nav>
@@ -30,18 +30,18 @@
 <main>
   <div>
     <!-- This is for image in main -->
-    <a href="index.html"><img src="./img/pizza_toppings.png"></a>
+    <a href="index.html"><img src="./img/pizza_toppings.png" alt="pizza toppings"></a>
    <!-- This is for order form -->
-      <form action="pizzashop".php" method="post" enctype="multipart/form-data"></form>
+      <form action="pizzashop.php" method="post" enctype="multipart/form-data">
         <label>How many pizzas?</label>
         <input type="number" name="number of pizzas" min="1" max="10" required>
         <br>
         <label>Choose your size: </label>
         <input type="radio" id="small" name="small" value="small">
         <label for="small">Small</label>
-        <input type="radio" name="medium" value="medium">
+        <input type="radio" id="medium" name="medium" value="medium">
         <label for="medium">Medium</label>
-        <input type="radio" name="large" value="large">
+        <input type="radio" id="large" name="large" value="large">
         <label for="large">Large</label>
         <br>
         <label>Choose your toppings: </label>
@@ -52,19 +52,20 @@
         <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
         <label for="pineapple">Pineapple</label>
         <br>
-        <input type="checkbox" id="green peppers" name="toppings" value="green peppers">
-        <label for="green peppers">Green Peppers</label>
+        <input type="checkbox" id="green_peppers" name="toppings" value="green_peppers">
+        <label for="green_peppers">Green Peppers</label>
         <br>
         <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
         <label for="mushrooms">Mushrooms</label>
         <br>
-        <input type="checkbox" id="extra cheese" name="toppings" value="extra cheese">
-        <label for="extra cheese">Extra cheeses</label>
+        <input type="checkbox" id="extra_cheese" name="toppings" value="extra_cheese">
+        <label for="extra_cheese">Extra cheeses</label>
         <br>
       </form>
+  </div>
     <div>
-      <!-- This is form container for id --->
-      <form action="customer".php" method="post" enctype="multipart/form-data">
+      <!-- This is form container for id -->
+      <form action="customer.php" method="post" enctype="multipart/form-data">
       <br>
       <label>Your Name (required)</label>
       <input type="text" name="name" required>
