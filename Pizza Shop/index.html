@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width-device-width, initial-scale=1">
+  <meta name="description" content=" Assignment Two: Pizza Shop">
+  <meta name="robots" content="noindex, nofollow">
+  <title> Assignment Two: Pizza Shop</title>
+  <!-- add our css file -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<header>
+  <!-- this div is for logo -->
+  <div>
+    <a href="index.html"><img src="./img/pizza_shop_banner.png"></a>
+  </div>
+  <!-- this nav is for site navigation -->
+  <nav>
+    <menu>
+      <li><a href="index.html">Homepage</a></li>
+      <li><a href="index.html">Order Form</a></li>
+    </menu>
+  </nav>
+</header>
+<!-- Main Heading -->
+<section>
+  <h1>The Pizza Shop</h1>
+</section>
+<main>
+  <div>
+    <!-- This is for image in main -->
+    <a href="index.html"><img src="./img/pizza_toppings.png"></a>
+   <!-- This is for order form -->
+      <form action="pizzashop".php" method="post" enctype="multipart/form-data"></form>
+        <label>How many pizzas?</label>
+        <input type="number" name="number of pizzas" min="1" max="10" required>
+        <br>
+        <label>Choose your size: </label>
+        <input type="radio" id="small" name="small" value="small">
+        <label for="small">Small</label>
+        <input type="radio" name="medium" value="medium">
+        <label for="medium">Medium</label>
+        <input type="radio" name="large" value="large">
+        <label for="large">Large</label>
+        <br>
+        <label>Choose your toppings: </label>
+        <br>
+        <input type="checkbox" id="pepperoni" name="toppings" value="pepperoni">
+        <label for="pepperoni">Pepperoni</label>
+        <br>
+        <input type="checkbox" id="pineapple" name="toppings" value="pineapple">
+        <label for="pineapple">Pineapple</label>
+        <br>
+        <input type="checkbox" id="green peppers" name="toppings" value="green peppers">
+        <label for="green peppers">Green Peppers</label>
+        <br>
+        <input type="checkbox" id="mushrooms" name="toppings" value="mushrooms">
+        <label for="mushrooms">Mushrooms</label>
+        <br>
+        <input type="checkbox" id="extra cheese" name="toppings" value="extra cheese">
+        <label for="extra cheese">Extra cheeses</label>
+        <br>
+      </form>
+    <div>
+      <!-- This is form container for id --->
+      <form action="customer".php" method="post" enctype="multipart/form-data">
+      <br>
+      <label>Your Name (required)</label>
+      <input type="text" name="name" required>
+      <br>
+      <label>Enter your email</label>
+      <input type="email" name="email" required placeholder="your@email.com">
+      <br>
+      <label>Phone number</label>
+
+      <input type="tel" name="phone" pattern="{0-9}{3}-{0-9}{3}-{0-9}{4}" required placeholder="555-555-5555">
+      <br>
+      <input type="submit" name="submit">
+      </form>
+    </div>
+
+</main>
+<footer>Pizza Shop 2024</footer>
+</body>
+</html>

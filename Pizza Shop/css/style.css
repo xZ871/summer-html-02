@@ -1,0 +1,91 @@
+body {
+    margin: 0;
+    background-color: #f8f8f8;
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: sans-serif;
+    text-align: center;
+}
+
+p, a, li, label {
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+/** style header **/
+header {
+    height: 125px;
+    background-color: #f8f8f8;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+header > div {
+    max-width: 100%;
+    height: auto;
+    float: none;
+    margin: 0 auto;
+}
+
+header > div > a > img {
+    width: 50%;
+    height: 60%;
+    display: block;
+    margin: auto;
+}
+
+header > nav {
+    float: none;
+    padding: 5px;
+    text-align: center;
+}
+
+header > nav > menu > li {
+    list-style: none;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding-left: 0px;
+}
+
+body > header > section > h1 {
+    color: #f8f8f8;
+    font-size: 54px;
+}
+
+main {
+    width: 60%;
+    margin: auto;
+    text-align: center;
+}
+
+section > h1 {
+    text-align: center;
+}
+
+main > div >  a > img {
+    width: 50%;
+    height: 10%;
+    image-orientation: inherit;
+    display: block;
+    margin: auto;
+}
+
+main > div > a > form{
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+
+}
+
+main > div > a > div > form > label{
+    text-align: right;
+}
+footer {
+    text-align: center;
+}
